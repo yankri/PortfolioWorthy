@@ -1,0 +1,76 @@
+﻿/*This stylesheet styles the homepage*/
+
+.navbar {
+    margin-bottom: 0px; /*gets rid of space between navbar and jumbotron*/
+}
+.dropdown-menu {  /*Changes drop down menu font*/
+    font-family:'Oswald', sans-serif;
+}
+/*tron formatting*/
+
+.jumbotron {
+    background: url(http://www.architectureartdesigns.com/wp-content/uploads/2014/05/1613-630x350.jpg) no-repeat center center;
+    background-color: #fff7d9;
+    background-size: cover;
+    height: 500px;
+}
+
+#top {
+    font-size: 75px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0px 0px 8px #C3E1E8;
+}
+
+#middle {
+    font-size: 75px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0px 0px 8px #C3E1E8;
+    margin-left: 200px;
+}
+#bottom {
+    font-size: 100px;
+    font-family: 'Dancing Script', sans-serif;
+    text-shadow: 0px 0px 8px #C3E1E8;
+    margin-left: 100px;
+}
+
+/*carousel*/
+.carousel-inner{
+    max-height: 350px; /*keeps the pictures from being too high and messing up the formatting*/
+}
+/*thumbnail formatting */
+
+.img {
+    height: 348px;
+    width: 348px;
+}
+.thumbnail {
+    height: 550px;
+    background-color: #FFF7d9;
+}
+
+h3 {
+    text-align: center;
+   color: #5D6B68;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 0px 0px 5px #F5D8CC; 
+}
+
+p {
+    text-align: center; 
+    color: #5D6B68;
+    font-size: 15px;
+    text-shadow: 0px 0px 5px #F5D8CC; 
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn {
+    background-color: #EB928D;
+    color: #5D6B68;
+    font-size: 25px;
+}
+.btn:hover {
+    background-color: #F5D8CC;
+    color: #5D6B68;
+}

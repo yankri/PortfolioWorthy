@@ -1,0 +1,28 @@
+﻿.dropdown-menu {
+    font-family:'Oswald', sans-serif;
+}
+
+#form {
+    font-size: 30px;
+    color: #5D6B68;
+    text-shadow: 0px 0px 5px #EB928D;
+}
+
+.form-control {
+    font-size: 25px;
+  height: 50px;
+  font-family: sans-serif;
+}
+
+.btn {
+    color: #5D6B68;
+    font-size: 30px;
+    text-shadow: 0px 0px 5px #FFF7D9;
+    background-color: #EB928D;
+}
+
+.btn:hover {
+   color: #5D6B68;
+    background-color: #F5D8CC;
+    text-shadow: 0px 0px 8px #EB928D;
+}

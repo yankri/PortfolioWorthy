@@ -1,0 +1,26 @@
+﻿@model IEnumerable<MiniHulu.Models.TVShow>
+<link href="~/Content/ShowBrowsePages.css" type="text/css" rel="stylesheet" />
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Shows By Genre";
+}
+
+<body>
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-6 col-md-4">
+                    <div id="showsbygenre" class="thumbnail">
+                        <img src="@item.CoverImage" height="350">
+                        <div class="caption">
+                            <h3>@item.Title</h3>
+                            <p>@item.Summary</p>
+                            <p><a href="@Url.Action("EpisodeBrowseByShow", "Home", new { id = item.ShowID })" class="btn btn-primary" role="button">Watch Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>

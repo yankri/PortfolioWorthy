@@ -1,0 +1,60 @@
+﻿/*Color inspiration: http://www.design-seeds.com/wanderlust/color-wander1/*/
+/*This stylesheet styles the layout */
+
+body {
+    background: url('../images/rsz_mix12.png') no-repeat center center fixed;
+    background-color: #FFF7D9;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*Homepage Header Title*/
+h1 {
+    text-shadow: 0px 0px 5px #EB928D;
+    color: #5D6B68;
+    font-size: 100px;
+    margin-left: 35px;
+}
+li a {
+    /*Keep navbar drop downs left aligned*/
+    text-align: left;
+}
+
+.dropdown-menu {
+    font-family:'Oswald', sans-serif;
+}
+
+/*Navbar styling*/
+.navbar {
+    font-size: 30px;
+    background-color: #F5D8CC;
+}
+
+.nav {
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    color: #5D6B68;
+    text-shadow: 0px 0px 5px #C3E1E8;
+}
+
+ /*Dropdown menu choices*/
+p a {  
+    margin-left: 20px;
+    color: #665C55;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+p a:hover {
+    color: #665C55;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #E89094;
+    font-size: 30px;
+}

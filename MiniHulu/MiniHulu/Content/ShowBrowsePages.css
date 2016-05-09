@@ -1,0 +1,45 @@
+﻿body {
+}
+
+img {
+    max-height: 350px;
+}
+a img {
+    height: 350px;
+}
+.thumbnail {
+    background-color: #BCABAE;
+}
+img.browse {
+    height: 350px;
+}
+h3 {
+    font-size: 30px;
+    color: #330c2f;
+}
+
+p {
+    font-size: 20px;
+}
+
+#showsbygenre {
+    height: 600px;
+}
+
+#title {
+    font-size: 50px;
+    color: #330c2f;
+}
+
+#summary, #genre {
+    font-size: 25px;
+}
+
+#networkshows {
+    height: 600px;
+}
+h2 {
+    font-size: 35px;
+    color: #330c2F;
+    text-decoration: underline;
+}

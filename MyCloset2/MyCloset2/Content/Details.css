@@ -1,0 +1,36 @@
+﻿.dropdown-menu {
+    font-family:'Oswald', sans-serif;
+}
+
+dt, dd {
+    font-size: 30px;
+}
+
+dd {
+    font-family:'Oswald', sans-serif;
+}
+    
+#details {
+    background-color: #F5D8CC;
+}
+
+p {
+    text-align: center;
+}
+#img {
+    border: 4px solid #EB928D;
+}
+#btn {
+    text-decoration: none;
+    font-size: 25px;
+    background-color:#EB928D; 
+}
+
+p a {
+    margin-left: 0;
+     text-shadow: 0px 0px 5px #F5D8CC;
+}
+
+p a:hover {
+    text-shadow: 0px 0px 8px #C3E1E8;
+}

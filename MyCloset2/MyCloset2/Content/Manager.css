@@ -1,0 +1,36 @@
+﻿.dropdown-menu {
+    font-family:'Oswald', sans-serif;
+}
+
+/*If the database is empty*/
+#nullimage {
+    text-align: center;
+}
+
+#null {
+    text-align: center;
+    color: #5D6B68;
+    text-shadow: 0px 0px 5px #A594E5;
+    font-size: 50px;
+}
+
+/*if the database has entries*/
+table tr th {
+    font-size: 35px;
+    color: #5D6B68;
+}
+
+table tr td {
+    color: #5D6B68;
+    font-size: 25px;
+    font-family:'Oswald', sans-serif;
+}
+
+hr {
+    border: 5px solid #5D6B68;
+    border-color: #5D6B68;
+}
+table {
+    background-color: #E0EED1;
+
+}

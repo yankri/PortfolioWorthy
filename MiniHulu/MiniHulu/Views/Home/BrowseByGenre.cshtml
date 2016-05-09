@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MiniHulu.Models.TVShow>
+<link href="~/Content/Browsebygenre.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Browse by Genre";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var myItems = Model.Select(x => new { x.Genre, x.CoverImage });
+    var myDistinctItems = myItems.GroupBy(x => x.Genre).Select(x => x.First());
+}
+
+
+<body>
+    <h1>Browse by Genre</h1>
+    <div class="container">
+        <div class="row">
+            @foreach (var item in myDistinctItems)
+            {
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="@item.CoverImage" height="350" width="350">
+                        <div class="caption">
+                            <h3>@item.Genre</h3>
+                            <p><a href="@Url.Action("ShowsByGenre", "Home", new { id = item.Genre })" class="btn btn-primary" role="button">Browse</a></p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>

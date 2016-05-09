@@ -1,0 +1,80 @@
+﻿@model MyClosetApp.Models.Bottoms
+<link href="~/Content/Details.css" type="text/css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Bottoms Details</h2>
+<div class="container">
+    <hr />
+
+    <div class="col-md-6">
+        <p><img id="img" src="@Html.DisplayFor(modelItem => modelItem.PhotoURL)" height="300" width="300" /></p>
+    </div>
+
+    <div class="col-md-6">
+        <dl id="details" class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nickname)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nickname)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PhotoURL)
+            </dt>
+
+            <dd>
+                @{
+                    if (Model.PhotoURL.Length > 25)
+                    {
+                        Model.PhotoURL = Model.PhotoURL.Substring(0, 25) + ". . .";
+                        @Html.DisplayFor(model => Model.PhotoURL)
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(model => model.PhotoURL)
+                    }
+                }
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Type)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Type)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Color)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Color)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Season)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Season)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Occasion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Occasion)
+            </dd>
+        </dl>
+
+        <p id="btn" class="btn btn-lg">@Html.ActionLink("Edit", "Edit", new { id = Model.BottomsID }) </p>
+        <p id="btn" class="btn btn-lg">@Html.ActionLink("Back to List", "Index")</p>
+
+    </div>
+</div>

@@ -1,0 +1,41 @@
+﻿@*This file is the code for the spring thumbnail at the bottom of the homepage*@
+
+@model IEnumerable<MyCloset2.Models.IPhotoGiver>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/Index.css" type="text/css" rel="stylesheet" />
+<link href="~/Content/Seasons.css" type="text/css" rel="stylesheet" />
+
+<h2>Your Spring Collection</h2>
+
+<div class="container">
+    @{
+        int counter = 0;
+        foreach (var item in Model)
+        {
+            if (!item.Season.Equals("spring", StringComparison.InvariantCultureIgnoreCase)) //checks to see if the Model.Season property is spring and if it's not it continues
+            {
+                counter++; //increments the counter to check if there aren't any spring items
+                continue;
+            }
+
+            if (counter == Model.Count()) //if the counter is the same as the model count, that means there's no spring items so it displays the error 
+            {
+                <p id="nullimage"><img src="http://yttalk.com/data/attachments/9/9853-1c3dec4be8cbe5df63d444cd18995acf.jpg" alt="y u no have stuff?" /> </p>
+                <p id="null">You don't have anything in here!</p>
+            }
+            else //spring items get displayed here
+            {
+                <div class="col-xs-6 col-md-4">
+                    <img class="thumbnail" src="@Html.DisplayFor(modelItem => item.PhotoURL)">
+                </div>
+            }
+        }
+    }
+</div>
+
+
+

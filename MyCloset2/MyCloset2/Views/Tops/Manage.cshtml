@@ -1,0 +1,80 @@
+﻿@model IEnumerable<MyClosetApp.Models.Tops>
+
+@*I added these manager views so that there would be an easy table format in addition to the view all format*@
+<link href="~/Content/Site.css" type="text/css" rel="stylesheet" />
+<link href="~/Content/Manager.css" type="text/css" rel="stylesheet" />
+
+<link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+
+@{
+    if (Model.Count() == 0)
+    {
+        <tr>
+            <td><p id="nullimage"><img src="http://yttalk.com/data/attachments/9/9853-1c3dec4be8cbe5df63d444cd18995acf.jpg" alt="y u no have stuff?" /> </p></td>
+            <td><p id="null">You don't have anything in here!</p></td>
+        </tr>
+    }
+    else
+    {
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nickname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PhotoURL)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Type)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Color)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Season)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Occasion)
+                </th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nickname)
+                    </td>
+                    <td>
+                        @{
+                            if (item.PhotoURL.Length > 25)
+                            {
+                                item.PhotoURL = item.PhotoURL.Substring(0, 25) + ". . .";
+                                @Html.DisplayFor(modelItem => item.PhotoURL);
+                            }
+                            else
+                            {
+                                @Html.DisplayFor(modelItem => item.PhotoURL)
+                            }
+                        }
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Type)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Color)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Season)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Occasion)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.TopsID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+}
+

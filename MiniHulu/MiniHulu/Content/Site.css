@@ -1,0 +1,62 @@
+﻿/*https://coolors.co/bcabae-0f0f0f-2d2e2e-330c2f-eabe37*/
+/*color scheme ^^*/
+
+body {
+    background-color: #0f0f0f;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+/*Top Navbar*/
+#navbar {
+    background-color: #2d2e2e;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#brand {
+    color: #EABE37;
+    font-size: 50px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+}
+#featured, #browse {
+    color: #EABE37;
+    font-size: 25px;
+}
+#featured:hover, #browse:hover {
+    text-shadow: 1px 1px 8px #808080;
+}
+.dropdown-menu {
+    background-color: #2d2e2e;
+    color: #EABE37;
+    font-size: 25px;
+}
+.dropdown-menu > li > a, a#browse.dropdown-toggle {
+    background-color: #2d2e2e;
+    color: #EABE37;
+    font-size: 25px;
+}
+.dropdown-menu > li > a:hover {
+    text-shadow: 1px 1px 8px #808080;
+    background-color: #2d2e2e;
+    color: #EABE37;
+    font-size: 25px;
+}
+.btn, .btn:hover {
+    background-color: #330C2F;
+    color: #BCABAE;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+form {
+    margin-top: 10px;
+}
+
+/*Slick slider container*/
+.content {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    padding-bottom: 30px;
+}

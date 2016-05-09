@@ -1,0 +1,41 @@
+﻿<link href="~/Content/ShowBrowsePages.css" type="text/css" rel="stylesheet" />
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = Model.TVShows.Title;
+}
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div id="showinfo" class="thumbnail">
+                    <img src="@Model.TVShows.CoverImage" alt="...">
+                    <div class="caption">
+                        <h3 id="title">@Model.TVShows.Title</h3>
+                        <p id="summary">Summary: @Model.TVShows.Summary</p>
+                        <p id="genre">Genre: @Model.TVShows.Genre</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div id ="episodes" class="thumbnail">
+                    @for (int i = 1; i < Model.SeasonCount + 1; i++)
+                    {
+                        <h2>Season @i</h2>
+                        foreach (var item in Model.Episodes)
+                        {
+                            if (item.SeasonNumber == i)
+                            {
+                                <h3>@item.Title</h3>
+                                <h4>Episode: @item.EpisodeNumber</h4>
+                                <h4>Runtime: @item.Runtime minutes</h4>
+                                <h4>Summary : @item.Summary</h4>
+                            }
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

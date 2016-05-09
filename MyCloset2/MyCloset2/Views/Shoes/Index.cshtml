@@ -1,0 +1,34 @@
+﻿
+@*Index pages are where you can view all clothes as thumbnail pics when selecting "view" from the navbar*@
+@model IEnumerable<MyClosetApp.Models.Shoes>
+<link href="~/Content/Index.css" type="text/css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Shoe Rack</h2>
+<p>
+    @Html.ActionLink("Add New Item", "Create")
+</p>
+
+<div class="container">  @*Shoes category was purposely left empty to be able to showcase this feature.*@
+    @{
+        if (Model.Count() == 0) @*If there's nothing in the category, it will display this error instead of just having a blank page*@
+        {
+            <p id="nullimage"><img src="http://yttalk.com/data/attachments/9/9853-1c3dec4be8cbe5df63d444cd18995acf.jpg" alt="y u no have stuff?" /> </p>
+            <p id="null">You don't have anything in here!</p>
+
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                <div class="col-xs-6 col-md-3">
+                    <a href="@Url.Action("Details", "Shoes", new { id = item.ShoesID })" class="thumbnail">
+                        <img src="@Html.DisplayFor(modelItem => item.PhotoURL)">
+                    </a>
+                </div>
+            }
+        }
+    }
+</div>

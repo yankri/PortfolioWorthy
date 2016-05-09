@@ -1,0 +1,40 @@
+﻿body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+/*Carousel formatting*/
+.image {
+    max-height: 400px;
+}
+#carousel-example-generic {
+    height: 550px;
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+/*Featured section*/
+#thumbnails {
+    margin-bottom: 50px;
+}
+h1 {
+   color: #EABE37;
+   font-family: 'Alegreya Sans', sans-serif;
+   font-weight: 800;
+   font-size: 60px;
+}
+.thumbnail {
+    text-align: center;
+    height: 500px;
+    background-color: #BCABAE;
+}
+img {
+    max-height: 350px;
+}
+h3 {
+    margin-bottom: 40px;
+    color: #0f0f0f;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Alegreya Sans', sans-serif;
+}

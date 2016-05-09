@@ -1,0 +1,32 @@
+﻿@model IEnumerable<MiniHulu.Models.TVNetwork>
+
+<link href="~/Content/Browsebygenre.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Browse by Network";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var myItems = Model.Select(x => new { x.ChannelName, x.Logo, x.NetworkID });
+    var myDistinctItems = myItems.GroupBy(x => x.ChannelName).Select(x => x.First());
+}
+
+
+<body>
+    <h1>Browse by Network</h1>
+    <div class="container">
+        <div class="row">
+            @foreach (var item in myDistinctItems)
+            {
+                <div class="col-sm-6 col-md-4">
+                    <div id="networkthumbs" class="thumbnail">
+                        <img class="networkimage" src="@item.Logo" height="150" width="350">
+                        <div class="caption">
+                            <h3>@item.ChannelName</h3>
+                            <p><a href="@Url.Action("ChannelBrowsePage", "Home", new { id = item.NetworkID })" class="btn btn-primary" role="button">Browse</a></p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+5
