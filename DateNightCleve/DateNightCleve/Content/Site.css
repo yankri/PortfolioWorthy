@@ -1,0 +1,98 @@
+﻿body {
+    background-color: #0f0f0f;
+    font-family: 'Dosis', sans-serif;
+}
+#header {
+    margin-left: -70px;
+    margin-bottom: 50px;
+}
+#navbar {
+    background: url('../iamges/cleveland-skyline-at-night-robert-harmon.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #0f0f0f;
+    border: none;
+    border-bottom: 1px solid #555555;
+}
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;  
+    color: white;
+    font-size: 60px;
+    margin-left: 20px;
+    text-shadow: 0px 0px 10px #F9C16C;
+}
+#cle {  /*format cleveland in header*/
+    font-weight: 800;
+    color: white;
+    font-size: 80px;
+    margin-left: 100px;
+    text-shadow: 0px 0px 10px #F9C16C;
+}
+.thumbnail {
+    background-color: #FEFAC8;
+}
+
+/*search button and form*/
+.form-group input {
+    width: 200px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.form-group button {
+    margin-top: 10px;
+}
+#layoutbtn {
+    text-decoration: none;
+    color: white;
+    border-color: white;
+    background-color: #F6A755;
+}
+#layoutbtn:hover {
+    background-color: #E66103;
+    border-color: white;    
+    text-shadow: 0px 0px 10px #fff;
+}
+
+/*make the browse menu bend to my will*/
+.navbar-default .navbar-nav > li > a, a.dropdown-toggle, 
+.navbar-default .navbar-nav > .dropdown > a .caret  {
+    color: white;
+    font-size: 25px;
+    border-top-color: white;
+    border-bottom-color: white;
+}
+.navbar-default .navbar-nav > li > a:hover, a.dropdown-toggle:hover, 
+.navbar-default .navbar-nav > .dropdown > a .caret:hover {
+    color: white;
+    font-size: 25px;
+    border-color: transparent;
+    text-shadow: 0px 0px 10px #F9C16C;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+.dropdown-menu > li > a {
+    background-color: #FEFAC8;
+}
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+     border-top-color: #555555;
+  border-bottom-color: #555555;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #FEFAC8;
+
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color:#FEFAC8;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: white;
+    text-decoration: none;
+    background-color: #FBBE77;
+}
+span.caret {
+    color: white;
+}

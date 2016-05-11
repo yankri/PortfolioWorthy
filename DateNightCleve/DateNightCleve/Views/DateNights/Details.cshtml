@@ -1,0 +1,94 @@
+﻿@model DateNightCleve.Models.DateNight
+
+@{
+    ViewBag.Title = "Details";
+}
+<link href="~/Content/Details.css" type="text/css" rel="stylesheet" />
+<h2 id="details">Date Details</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="@Html.DisplayFor(model => model.PhotoURL)" />
+        </div>
+        <div class="col-md-6">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Date)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Date)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Address)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Address)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.PhoneNum)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.PhoneNum)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.PhotoURL)
+                </dt>
+
+                <dd>
+                    @if (Model.PhotoURL.Length > 25)
+                    {
+                        Model.PhotoURL = Model.PhotoURL.Substring(0, 25) + " . . .";
+                        @Html.DisplayFor(model => model.PhotoURL);
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(model => model.PhotoURL);
+                    }
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Website)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Website)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.PricePerPerson)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.PricePerPerson)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Category)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Category)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RecordNum }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,60 @@
+﻿body {
+}
+#header {
+    margin-bottom: 0px;
+}
+#submit {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    color: #FECC79;
+    text-shadow: 5px 5px 20px #F9C16C;
+    margin-bottom: 30px;
+}
+.create {
+    display: block;
+
+}
+.create input {
+    width: 500px;
+}
+label.control-label.col-md-2 {
+    margin-top: 15px;
+    padding-right: 0;
+}
+.control-label {
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-shadow: 0px 0px 8px #FCC252;
+    padding-top: 0px;
+    margin-top: 10px;
+}
+.col-md-2, .form-horizontal, .control-label {
+    padding-top: 0px;
+}
+div.form-group.create {
+    margin-bottom: 0px;
+}
+.col-md-10 {
+    margin-bottom: 20px;
+}
+.btn, .btn a {
+    text-decoration: none;
+    color: white;
+    border-color: white;
+    background-color: #F6A755;
+}
+.btn:hover, .btn a:hover {
+    background-color: #E66103;
+    border-color: white;    
+    color: white;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+input.btn.btn-default {
+    margin: 0;
+}
+

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<DateNightCleve.Models.DateNight>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<link href='https://fonts.googleapis.com/css?family=Dosis:400,800' rel='stylesheet' type='text/css'>
+<link href="~/Content/Homepage.css" rel="stylesheet" type="text/css"/>
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="@Html.DisplayFor(modelItem => item.PhotoURL)" alt="..." height="195" width="350">
+                <div class="caption">
+                    <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+                    <p>Category: @Html.DisplayFor(modelItem => item.Category)</p>
+                    <p>When: @Html.DisplayFor(modelItem => item.Date)</p>
+                    <p>Where: @Html.DisplayFor(modelItem => item.Address)</p>
+                    <p>Contact: @Html.DisplayFor(modelItem => item.PhoneNum)</p>
+                    <p>Cost: $@Html.DisplayFor(modelItem => item.PricePerPerson)</p>
+                    <p><a href="@Html.DisplayFor(modelItem => item.Website)">Website</a></p>
+                    <p id="btn1" class="btn btn-primary" role="button">@Html.ActionLink("Edit", "Edit", new { id = item.RecordNum })</p>
+                    <p id="btn2" class="btn btn-primary" role="button">@Html.ActionLink("Details", "Details", new { id = item.RecordNum })</p>
+                    <p id="btn3" class="btn btn-primary" role="button">@Html.ActionLink("Delete", "Delete", new { id = item.RecordNum })</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

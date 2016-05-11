@@ -1,0 +1,33 @@
+﻿body {
+}
+
+img {
+    max-height: 195px;
+}
+
+.thumbnail {
+    height: 500px;
+    margin-bottom: 20px;
+}
+/*home page thumbnails buttons*/
+#btn1 a, #btn2 a, #btn3 a {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #FBBE77;
+    color: white;
+}
+
+#btn1 a:hover, #btn2 a:hover, #btn3 a:hover {
+    text-shadow: 0px 0px 10px #fff;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    border-color: white;
+    background-color: #F6A755;
+}
+.btn:hover {
+background-color: #E66103;
+    border-color: white;    
+    text-shadow: 0px 0px 10px #fff;
+}

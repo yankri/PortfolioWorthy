@@ -19,8 +19,9 @@
         <div class="center">
             @foreach (var item in Model)
             {
-                <div><a href="@Url.Action("EpisodeBrowseByShow", "Home", new { id = item.ShowID })"><img class="image" src="@Html.DisplayFor(modelItem => item.CoverImage)" alt="..." height="400"></a></div>
-                         }
+                <div><a href="@Url.Action("EpisodeBrowseByShow", "Home", new { id = item.ShowID })">
+                    <img class="image" src="@Html.DisplayFor(modelItem => item.CoverImage)" alt="..." height="400"></a></div>
+            }
         </div>
     </div>
 
