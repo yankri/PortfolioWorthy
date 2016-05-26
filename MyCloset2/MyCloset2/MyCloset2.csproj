@@ -182,7 +182,9 @@
     <Content Include="Content\Homepage.css" />
     <Content Include="Content\Index.css" />
     <Content Include="Content\Manager.css" />
+    <Content Include="Content\ManagerImageMouseover.js" />
     <Content Include="Content\Seasons.css" />
+    <Content Include="Content\toDoList.txt" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

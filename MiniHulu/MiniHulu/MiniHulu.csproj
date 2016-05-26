@@ -176,6 +176,7 @@
     <Content Include="Content\Homepage.css" />
     <Content Include="Content\ShowBrowsePages.css" />
     <Content Include="Content\slickcarousel.js" />
+    <Content Include="Content\ToDoList.txt" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

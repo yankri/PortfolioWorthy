@@ -1,0 +1,221 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+<link href="~/Content/homepage.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
+
+<div class="container">
+        <img id="dino" src="~/image/sassy.png" />
+        <div id="header"></div>
+        <h1 id="name">KRI<a href="@Url.Action("MadeThese", "Home")" id="stuffImade">S</a>T<span id="about">A</span> <span id="skills">S</span><span id="contact">C</span>H<a href="@Url.Action("OtherStuff", "Home")" id="otherstuff">O</a>LDB<span id="education">E</span>RG <br /> <span id="title">Full Stack Developer</span></h1>
+
+
+        <!--Hidden menus on name-->
+        <div class="menus" id="stuffmenu">S<br />T<br />U<br />F<br />F<br /> <br />I<br /> <br /> M<br />A<br />D<br />E</div>
+        <div class="menus" id="aboutmenu">A<br />B<br />O<br />U<br />T</div>
+        <div class="menus" id="skillsmenu">S<br />K<br />I<br />L<br />L<br />S</div>
+        <div class="menus" id="contactmenu">C<br />O<br />N<br />T<br />A<br />C<br />T</div>
+        <div class="menus" id="otherstuffmenu">O<br />T<br />H<br />E<br />R<br /> <br />S<br />T<br />U<br />F<br />F</div>
+        <div class="menus" id="edumenu">E<br />D<br />U<br />C<br />A<br />T<br />I<br />O<br />N</div>
+
+        <!--different pages-->
+        <div class="hiddden" id="aboutpage">
+            <h1 id="abouttitle">About me!</h1>
+            <img id="biopic" src="~/image/2016-05-24.jpg" />
+            <p id="descwords">Programmer - Crafter - Business Owner</p>
+            <p id="desc">Krista is a budding software developer living on the east side of Cleveland, OH. After spending the last several years home with her children, she is getting back into the workforce.  With a passion for creativity, Krista specializes in designing and building websites using ASP.NET and a variety of front-end technologies. She spends her free time with her two dogs, two cats, two rabbits, and two children and software dev husband.</p>
+        </div>
+
+        <div class="hiddden" id="skillspage">
+            <p id="langtitle">Languages</p>
+            <ul>
+                <li>C#</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>JQuery/JQueryUI</li>
+                <li>Git</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+
+        <div class="hiddden" id="contactpage">
+            <h1 id="contacttitle">Contact me!</h1>
+            <a href="https://github.com/yankri" target="_blank" ><img src="~/image/GitHub-Mark-Light-64px.png" id="github"/></a><br />
+            <a href="https://www.linkedin.com/in/yankri" target="_blank"><img src="~/image/Logo-2CRev-66px-TM.png"/></a>
+        </div>
+
+        @*<div class="hiddden" id="otherstuffIlikepage">
+            <a href="www.moonlitway.com" id="mw"><img src="~/image/2016-03-22.png" title="www.moonlitway.com"/></a><br/>
+            <img src="~/image/doggies.jpg" id="dogs" title="Kiya and Tyrael"/><br/>
+            <img src="~/image/cat.jpg" id="cat" title="Raven"/>
+        </div>*@
+
+        <div class="hiddden" id="edupage">
+            <h3>We Can Code IT Coding Bootcamp</h3>
+            <h4>Part-time evening cohort</h4>
+            <p>Project-based coding curriculum</p>
+            
+            <h3>John Carroll University</h3>
+            <h4>Bachelor of Science in Biology, Class of December 2007</h4>
+            <p>Concentrations in Math and Chemistry.</p>
+            </div>
+    </div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+
+<script>
+    function hideAll() {
+        $("#stuffpage").hide();
+        $('#edupage').hide();
+        $('#contactpage').hide();
+        $('#skillspage').hide();
+        $('#aboutpage').hide();
+    };
+    $(document).ready(function () {
+        $("#skills").click(function (e) {
+            $('#skillspage').css({
+                top: "50px",
+                right: "100px"
+            });
+            hideAll();
+            $('#skillspage').show("slide", { direction: "right" }, 400);
+        });
+    });
+    $("#skills").hover(function () {
+        $(this).stop().css({
+            "cursor": "pointer"
+        })
+    });
+    $(document).ready(function () {
+        $("#contact").click(function (e) {
+            $('#contactpage').css({
+                top: "50px",
+                right: "250px"
+            });
+            hideAll();
+            $('#contactpage').show("slide", { direction: "right" }, 400);
+        });
+    });
+    $("#contact").hover(function () {
+        $(this).stop().css({
+            "cursor": "pointer"
+        })
+    });
+    $(document).ready(function () {
+        $("#education").click(function (e) {
+            $('#edupage').css({
+                top: "50px",
+                right: "100px"
+            });
+            hideAll();
+            $('#edupage').show("slide", { direction: "right" }, 400);
+        });
+    });
+    $("#education").hover(function () {
+        $(this).stop().css({
+            "cursor": "pointer"
+        })
+    });
+    $(document).ready(function () {
+        $("#about").click(function (e) {
+            $('#aboutpage').css({
+                top: "50px",
+                right: "50px"
+            });
+            hideAll();
+            $('#aboutpage').show("slide", { direction: "right" }, 400);
+        });
+    });
+    $("#about").hover(function () {
+        $(this).stop().css({
+            "cursor": "pointer"
+        })
+    });
+  
+    $("#otherstuff").hover(function () {
+        $(this).stop().css({
+            "cursor": "pointer"
+        })
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#stuffImade").mouseenter(function (e) {
+            $("#stuffmenu").css({
+                top: "180px",
+                left: "310px",
+            });
+            $("#stuffmenu").toggle("slide", { direction: "up"}, 400);
+        });
+        $("#stuffImade").mouseout(function (e) {
+            $("#stuffmenu").hide();
+        });
+    });
+    $(document).ready(function () {
+        $("#about").mouseenter(function (e) {
+            $("#aboutmenu").css({
+                top: "238px",
+                left: "364px"
+            });
+            $("#aboutmenu").toggle("slide", { direction: "up" }, 400);
+        });
+        $("#about").mouseout(function (e) {
+            $("#aboutmenu").hide();
+        });
+    });
+    $(document).ready(function () {
+        $("#skills").mouseenter(function (e) {
+            $("#skillsmenu").css({
+                top: "295px",
+                left: "420px"
+            });
+            $("#skillsmenu").toggle("slide", { direction: "up" }, 400);
+        });
+        $("#skills").mouseout(function (e) {
+            $("#skillsmenu").hide();
+        });
+    });
+    $(document).ready(function () {
+        $("#contact").mouseenter(function (e) {
+            $("#contactmenu").css({
+                top: "70px",
+                left: "490px"
+            });
+            $("#contactmenu").toggle("slide", { direction: "down" }, 400);
+        });
+        $("#contact").mouseout(function (e) {
+            $("#contactmenu").hide();
+        });
+    });
+    $(document).ready(function () {
+        $("#otherstuff").mouseenter(function (e) {
+            $("#otherstuffmenu").css({
+                top: "20px",
+                left: "560px"
+            });
+            $("#otherstuffmenu").toggle("slide", { direction: "down" }, 400);
+        });
+        $("#otherstuff").mouseout(function (e) {
+            $("#otherstuffmenu").hide();
+        });
+    });
+    $(document).ready(function () {
+        $("#education").mouseenter(function (e) {
+            $("#edumenu").css({
+                top: "210px",
+                left: "705px",
+            });
+            $("#edumenu").toggle("slide", { direction: "down" }, 400);
+        });
+        $("#education").mouseout(function (e) {
+            $("#edumenu").hide();
+        });
+    });
+</script>
+

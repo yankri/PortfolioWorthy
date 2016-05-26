@@ -72,7 +72,7 @@ namespace MiniHulu.Controllers
 
         public ActionResult Search(string searchterms)
         {
-            return View(db.TVShows.Where(x => x.Title.StartsWith(searchterms)).ToList());
+            return View(db.TVShows.Where(x => x.Title.Contains(searchterms)).ToList());
         }
 
     }

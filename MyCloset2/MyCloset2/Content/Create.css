@@ -9,6 +9,8 @@
 }
 
 .form-control {
+    border: 2px solid #EB928D;
+    border-color: #EB928D;
     font-size: 25px;
   height: 50px;
   font-family: sans-serif;

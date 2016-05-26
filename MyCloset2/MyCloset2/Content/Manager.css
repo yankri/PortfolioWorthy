@@ -1,7 +1,10 @@
 ﻿.dropdown-menu {
     font-family:'Oswald', sans-serif;
 }
-
+.container-fluid{
+   margin-right: 30px;
+   margin-left: 30px;
+}
 /*If the database is empty*/
 #nullimage {
     text-align: center;
@@ -32,5 +35,16 @@ hr {
 }
 table {
     background-color: #E0EED1;
+}
 
+/*Mouse over images*/
+a.popup {
+    text-decoration: none;
+    color: #5D6B68;
+}
+#largeImage {
+    position: absolute;
+    padding: .5em;
+    background: #F5D8CC;
+    border: 3px solid #EB928D;
 }

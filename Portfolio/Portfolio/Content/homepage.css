@@ -1,0 +1,150 @@
+﻿body {
+    background-color: #0f0f0f;
+    padding: 0;
+}
+.container {
+    margin-left: 0;
+    /*89.5 margins on container*/
+}
+#header {
+    height: 100px;
+    clear: right;
+}
+
+#name, #title {
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+    color: #EEF9ED;
+    text-align: right;
+    font-family: 'Cherry Cream Soda', cursive;
+}
+
+#name {
+    font-size: 60px;
+    position: absolute;
+    right: 450px;
+    top: 300px;
+    z-index: 100;
+    margin: 0;
+}
+
+#dino {
+    position: relative;
+    margin-top: 100px;
+    z-index: -1;
+}
+
+#title {
+    position: relative;
+    font-size: 25px;
+    bottom: 25px;
+    right: 30px;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.menus {
+    display: none;
+    position: absolute;
+    color: #EEF9ED;
+    font-size: 30px;
+    margin: 0;
+    margin-top: 5px;
+    line-height: 1;
+    font-family: 'Cherry Cream Soda', cursive;
+}
+
+.menus:hover {
+    cursor: pointer;
+}
+#stuffImade, #stuffmenu {
+    color: #EE008D;
+}
+#about, #aboutmenu {
+    color: #53B747;
+}
+#skills, #skillsmenu {
+    color: #29ADE4;
+}
+#contact, #contactmenu {
+   color: #FFF200;
+}
+#otherstuff, #otherstuffmenu {
+    color: #EE008D;
+}
+#education, #edumenu {
+    color: #53B747;
+}
+/*slide in pages*/
+.hiddden {
+    display: none;
+    position: absolute;
+}
+/*skills page*/
+#skillspage {
+    color: #29ADE4;
+    font-family: 'Cherry Cream Soda', cursive;
+    font-size: 30px;
+}
+#langtitle {
+    font-size: 40px;
+}
+/*contact page*/
+#contactpage, #contactpage a {
+    color: #FFF200;
+     font-family: 'Cherry Cream Soda', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+#contacttitle {
+    font-size: 50px;
+}
+/*about page*/
+#abouttitle {
+    color: #53B747;
+}
+#aboutpage {
+    text-align: center;
+    font-family: 'Cherry Cream Soda', cursive;
+}
+#descwords {
+    color: #29ADE4;
+}
+#desc {
+    color: #53B747;
+}
+#biopic {
+    border: 2px solid #EE008D;
+    border-radius: 50%;
+    height: 250px;
+    margin-bottom: 15px;
+}
+#aboutpage p {
+    max-width: 450px;
+}
+/*education page*/
+#edupage {
+    color: #53B747;
+    font-family: 'Cherry Cream Soda', cursive;
+    text-align: right;
+}
+#edupage h3 {
+    font-size: 25px;
+    color: #EE008D;
+}
+/*other stuff page*/
+#dogs, #cat{
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+/*Contact page*/
+#github {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

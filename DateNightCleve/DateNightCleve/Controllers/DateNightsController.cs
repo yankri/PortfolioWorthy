@@ -142,7 +142,7 @@ namespace DateNightCleve.Controllers
 
         public ActionResult Search(string searchterms)
         {
-            return View(db.DateNights.Where(x => x.Title.StartsWith(searchterms) || x.Category.StartsWith(searchterms)).ToList());
+            return View(db.DateNights.Where(x => x.Title.Contains(searchterms) || x.Category.Contains(searchterms)).ToList());
         } 
 
         public ActionResult ListofShows(string id)

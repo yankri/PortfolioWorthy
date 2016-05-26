@@ -1,0 +1,3 @@
+﻿1. make spring/summer page items clickable
+2. make front carousel clickable
+3. figure out if the first two are even possible... or change the ID property names so they're all the same and I can call them easily to send to the controller
