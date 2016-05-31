@@ -1,5 +1,37 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@model Portfolio.Models.ProjectViewModel
+@{
+    Layout = "~/Views/Shared/_StuffLayout.cshtml";
+    ViewBag.Title = "Stuff I Made";
+
+
 }
+<link href="~/Content/MadeThese.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
+@*<div class="container-fluid">
+    <div class="row">
+        <a href="@Url.Action("Index", "Home")"><img class="pull-left" id="dino" src="~/image/sassy.png" title="Return to Home" /></a>
+        <h1 id="name">Krista Scholdberg</h1>
+    </div>
+</div>*@
+<div class="container">
+    <h1 id="title">Stuff I Made</h1>
+    <p id="intro">Here is a selection of my favorite things I've made so far. More projects can be found on my GitHub account <a href="www.github.com/yankri" id="ghlink">here</a>.</p>
+    @foreach (var item in Model.Projects)
+    {
+        var languages = Model.Languages.Where(x => x.ID == item.ID).ToList();
+        var image = Model.Screenshots.Where(x => x.ID == item.ID).Select(x => x.Image).First().ToString();
 
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="@image" alt="...">
+                <div class="caption">
+                    <h3 class="projname">@item.ProjectName</h3>
+                    <p>@item.Description</p>
 
+                    <p><a href="@Url.Action("IdvProject", "Home", new { id = item.ID })" class="btn btn-primary" role="button">Get the Deets</a> </p>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

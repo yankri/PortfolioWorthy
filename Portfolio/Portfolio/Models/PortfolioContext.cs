@@ -22,5 +22,7 @@ namespace Portfolio.Models
         public System.Data.Entity.DbSet<Portfolio.Models.Projects> Projects { get; set; }
 
         public System.Data.Entity.DbSet<Portfolio.Models.Screenshots> Screenshots { get; set; }
+
+        public System.Data.Entity.DbSet<Portfolio.Models.Languages> Languages { get; set; }
     }
 }

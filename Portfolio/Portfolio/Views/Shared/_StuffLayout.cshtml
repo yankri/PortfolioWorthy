@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - Krista Scholdberg</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href='https://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
+    <link href="~/Content/MadeThese.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <a href="@Url.Action("Index", "Home")"><img class="pull-left" id="dino" src="~/image/sassy.png" title="Return to Home" /></a>
+            <h1 id="name">Krista Scholdberg</h1>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+        @Scripts.Render("~/bundles/jquery")
+        <script src="~/Scripts/jquery-ui-1.11.4.js"></script>
+        <script src="~/Scripts/slick.min.js"></script>
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+        <script src="~/Scripts/indvprojcarousel.js"></script>
+    </div>
+</body>
+</html>

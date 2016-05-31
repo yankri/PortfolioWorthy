@@ -16,7 +16,7 @@ namespace Portfolio.Models
         public string Description { get; set; }
         [Required(ErrorMessage = "A GitHub link is required")]
         public string GithubLink { get; set; }
-
+        public string Type { get; set; } //like personal, assignment etc
 
 
     }

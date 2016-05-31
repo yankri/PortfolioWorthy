@@ -1,0 +1,26 @@
+﻿@model Portfolio.Models.ProjectViewModel
+
+@{
+    Layout = "~/Views/Shared/_StuffLayout.cshtml";
+    var indvproj = Model.Projects.First();
+}
+<link href='https://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
+<link href="~/Content/MadeThese.css" rel="stylesheet" type="text/css"/>
+<link href="~/Content/slick.css" rel="stylesheet" type="text/css"/>
+<link href="~/Content/slick-theme.css" rel="stylesheet" type="text/css"/>
+
+<div class="container">
+    <h1 id="projectname">@indvproj.ProjectName</h1>
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-8">
+        <div class="fade">
+            @foreach (var item in Model.Screenshots)
+            {
+                <img class="image" src="@item.Image" />
+            }
+        </div>
+    </div>
+</div>
+

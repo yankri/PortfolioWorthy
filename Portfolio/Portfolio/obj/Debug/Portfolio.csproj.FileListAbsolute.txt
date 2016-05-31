@@ -81,3 +81,7 @@ C:\Users\WeCanCodeIT\Documents\GitHub\PortfolioWorthy\Portfolio\Portfolio\bin\Mi
 C:\Users\WeCanCodeIT\Documents\GitHub\PortfolioWorthy\Portfolio\Portfolio\obj\Debug\Portfolio.csprojResolveAssemblyReference.cache
 C:\Users\WeCanCodeIT\Documents\GitHub\PortfolioWorthy\Portfolio\Portfolio\obj\Debug\Portfolio.dll
 C:\Users\WeCanCodeIT\Documents\GitHub\PortfolioWorthy\Portfolio\Portfolio\obj\Debug\Portfolio.pdb
+C:\Users\WeCanCodeIT\Documents\GitHub\PortfolioWorthy\Portfolio\Portfolio\obj\Debug\Portfolio.Migrations.InitialCreate.resources
+C:\Users\WeCanCodeIT\Documents\GitHub\PortfolioWorthy\Portfolio\Portfolio\obj\Debug\Portfolio.csproj.GenerateResource.Cache
+C:\Users\WeCanCodeIT\Documents\GitHub\PortfolioWorthy\Portfolio\Portfolio\obj\Debug\Portfolio.Migrations.addlanguages.resources
+C:\Users\WeCanCodeIT\Documents\GitHub\PortfolioWorthy\Portfolio\Portfolio\obj\Debug\Portfolio.Migrations.newtable.resources
