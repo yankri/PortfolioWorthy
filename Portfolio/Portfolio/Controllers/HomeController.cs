@@ -29,31 +29,9 @@ namespace Portfolio.Controllers
 
             return View();
         }
+
         public ActionResult MadeThese()
         {
-            //    var projects = db.Projects.ToList();
-            //    var images = db.Screenshots.GroupBy(x => x.ID).Select(x => x.FirstOrDefault());
-            //    var languages = db.Languages.ToList();
-            //    var datas = (from project in db.Projects
-            //                 join image in db.Screenshots on project.ID equals image.ID
-            //                 join language in db.Languages on project.ID equals language.ID
-            //                 select new ProjectData
-            //                 {
-            //                     ID = project.ID,
-            //                     ProjectName = project.ProjectName,
-            //                     Image = image.Image,
-            //                     LanguagesUsed = new List<string> { language.LanguageUsed.ToString() }
-            //                 });
-
-
-            //var projectss = new ProjectViewModel
-            //    {
-            //        ProjectLists = projects,
-            //        Images = images.ToList(),
-            //        LanguagesUsed = languages
-            //    };
-            //    return View(projectss);
-
             PortfolioContext contect = new PortfolioContext();
             ProjectViewModel VM = new ProjectViewModel();
             VM.Projects = contect.Projects.Select(x => x);
@@ -62,6 +40,7 @@ namespace Portfolio.Controllers
 
             return View(VM);
         }
+
         public ActionResult IdvProject(string id)
         {
             PortfolioContext contect = new PortfolioContext();
@@ -72,6 +51,7 @@ namespace Portfolio.Controllers
 
             return View(VM);
         }
+
         public ActionResult OtherStuff()
         {
             return View();

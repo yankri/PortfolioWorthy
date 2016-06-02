@@ -46,7 +46,7 @@ namespace Portfolio.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,ProjectName,Description,GithubLink,Type")] Projects projects)
+        public ActionResult Create([Bind(Include = "ID,ProjectName,Description,GithubLink,Type,TechDescription")] Projects projects)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace Portfolio.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,ProjectName,Description,GithubLink,Type")] Projects projects)
+        public ActionResult Edit([Bind(Include = "ID,ProjectName,Description,GithubLink,Type,TechDescription")] Projects projects)
         {
             if (ModelState.IsValid)
             {

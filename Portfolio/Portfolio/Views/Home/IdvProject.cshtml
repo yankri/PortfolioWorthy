@@ -3,24 +3,41 @@
 @{
     Layout = "~/Views/Shared/_StuffLayout.cshtml";
     var indvproj = Model.Projects.First();
+    ViewBag.Title = indvproj.ProjectName;
 }
 <link href='https://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
 <link href="~/Content/MadeThese.css" rel="stylesheet" type="text/css"/>
-<link href="~/Content/slick.css" rel="stylesheet" type="text/css"/>
-<link href="~/Content/slick-theme.css" rel="stylesheet" type="text/css"/>
+<link href="~/Content/slick/slick.css" rel="stylesheet" type="text/css"/>
+<link href="~/Content/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
 
 <div class="container">
-    <h1 id="projectname">@indvproj.ProjectName</h1>
-    <div class="col-md-4">
+    <div class="row">
+        <div class="col-md-4">
+            <h1 id="projectname">@indvproj.ProjectName</h1>
+            <a href="@indvproj.GithubLink" target="_blank" id="githublink">GitHub Repository</a>
 
-    </div>
-    <div class="col-md-8">
-        <div class="fade">
-            @foreach (var item in Model.Screenshots)
-            {
-                <img class="image" src="@item.Image" />
-            }
+            <h2 class="heading">Languages Used:</h2>
+            <ul>
+                @foreach (var lang in Model.Languages)
+                {
+                    <li>@lang.LanguageUsed</li>
+                }
+            </ul>
+            <h2 class="heading">Description:</h2>
+            <p id="description">@indvproj.Description</p>
         </div>
+        <div class="col-md-8">
+            <div class="autoplay">
+                @foreach (var item in Model.Screenshots)
+            {
+                    <img class="image" src="@item.Image" />
+                }
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="heading">Technical Description</h2>
+        <p id="description">@indvproj.TechDescription</p>
     </div>
 </div>
 

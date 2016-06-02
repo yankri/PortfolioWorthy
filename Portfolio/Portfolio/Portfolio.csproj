@@ -185,6 +185,10 @@
     <Compile Include="Migrations\201605262246464_newtable.Designer.cs">
       <DependentUpon>201605262246464_newtable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606020048001_techdesc.cs" />
+    <Compile Include="Migrations\201606020048001_techdesc.Designer.cs">
+      <DependentUpon>201606020048001_techdesc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Languages.cs" />
     <Compile Include="Models\PortfolioContext.cs" />
@@ -238,11 +242,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="image\11139351_10100149794163481_9017015709331893082_n.jpg" />
+    <Content Include="image\1173734_832068251781_1882872502_n.jpg" />
+    <Content Include="image\12919768_10100271232130821_8023653966763495782_n.jpg" />
     <Content Include="image\2016-03-22.png" />
     <Content Include="image\2016-05-24.jpg" />
+    <Content Include="image\2016-05-31.jpg" />
     <Content Include="image\cat.jpg" />
     <Content Include="image\doggies.jpg" />
+    <Content Include="image\FB-f-Logo__blue_72.png" />
     <Content Include="image\GitHub-Mark-Light-64px.png" />
+    <Content Include="image\Instagram-v051916.png" />
     <Content Include="image\Logo-2CRev-66px-TM.png" />
     <Content Include="image\sassy.png" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -253,6 +263,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="image\TwitterLogo_white.png" />
     <Content Include="screenshots\browseByCategory.jpg" />
     <Content Include="screenshots\browseByCost.jpg" />
     <Content Include="screenshots\dateDetails.jpg" />
@@ -372,6 +383,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\slick\" />
     <Folder Include="Scripts\slick\" />
   </ItemGroup>
   <ItemGroup>
@@ -388,6 +400,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605262246464_newtable.resx">
       <DependentUpon>201605262246464_newtable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606020048001_techdesc.resx">
+      <DependentUpon>201606020048001_techdesc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -61,3 +61,66 @@ a.btn {
     height:300px;
     width:900px;
 }
+#projectname {
+    margin-top: 0px;
+    color: #EE008D;
+    font-size: 40px;
+}
+
+.heading {
+    color: #53B747;
+}
+
+#githublink {
+    color: #29ADE4;
+}
+
+ul {
+    color: #FFF200;
+}
+
+#description {
+    color: #FFF200;
+}
+/*other stuff page*/
+#mw {
+    margin: auto;
+}
+#mwplug {
+    color: #53B747;
+}
+#mwpic {
+    text-align: center;
+}
+.linksies, .linksies:hover {
+    color: #EE008D;
+}
+#facebook, #insta, #twitter {
+    height: 72px;
+    width: 72px;
+}
+hr {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    border-color: #EE008D;
+}
+.img {
+    height: 300px;
+    width: auto;
+    border: 2px solid #29ADE4;
+}
+table {
+    text-align: center;
+    width: 900px;
+    margin:auto;
+}
+
+.name {
+    color: #EE008D;
+}
+.breed {
+    color: #53B747;
+}
+.likes{
+    color: #FFF200;
+}
