@@ -1,4 +1,6 @@
-﻿body {
+﻿/*HOMEPAGE*/
+
+body {
     background-color: #0f0f0f;
     padding: 0;
 }
@@ -87,100 +89,120 @@ a, a:hover {
 #education, #edumenu {
     color: #53B747;
 }
+
 #skillstable {
-    font-size:30px;
+    font-size: 30px;
 }
+
 table {
     text-align: center;
 }
+
 td, #langtabletitle {
     padding-right: 15px;
 }
+
 #langtabletitle, #tooltabletitle {
     color: #EE008D;
     font-size: 40px;
 }
+
 th {
-    text-align:center;
+    text-align: center;
     margin-right: 20px;
 }
+
 .tools {
     padding-left: 15px;
 }
+
 .edudesc {
     color: #29ADE4;
 }
-/*glowing letters help let someone know where to click*/
 
+/*glowing letters help let someone know where to click*/
 #stuffImade {
     -webkit-animation: glow 1.5s infinite alternate;
     /*-webkit-animation-delay: .75s;*/
 }
+
 #about {
     -webkit-animation: glow1 2s infinite alternate;
     -webkit-animation-delay: .5s;
 }
+
 #skills {
     -webkit-animation: glow2 1.5s infinite alternate;
     -webkit-animation-delay: 1s;
 }
+
 #contact {
     -webkit-animation: glow3 2s infinite alternate;
     -webkit-animation-delay: 1.5s;
 }
+
 #otherstuff {
     -webkit-animation: glow4 1.5s infinite alternate;
     -webkit-animation-delay: 2s;
 }
+
 #education {
     -webkit-animation: glow5 2s infinite alternate;
     -webkit-animation-delay: 2.5s;
 }
+
 @-webkit-keyframes glow {
     to {
         text-shadow: 0 0 8px #EE008D;
     }
 }
+
 @-webkit-keyframes glow1 {
     to {
         text-shadow: 0 0 8px #53B747;
     }
 }
+
 @-webkit-keyframes glow2 {
     to {
         text-shadow: 0 0 8px #29ADE4;
     }
 }
+
 @-webkit-keyframes glow3 {
     to {
         text-shadow: 0 0 8px #FFF200;
     }
 }
+
 @-webkit-keyframes glow4 {
     to {
         text-shadow: 0 0 8px #EE008D;
     }
 }
+
 @-webkit-keyframes glow5 {
     to {
         text-shadow: 0 0 6px #53B747;
     }
 }
+
 /*slide in pages*/
 .hiddden {
     display: none;
     position: absolute;
 }
+
 /*skills page*/
 #skillspage {
     color: #29ADE4;
     font-family: 'Cherry Cream Soda', cursive;
     font-size: 30px;
 }
-
 #langtitle {
     font-size: 40px;
 }
+
 /*contact page*/
 #contactpage, #contactpage a {
     color: #FFF200;
@@ -188,49 +210,45 @@ th {
     font-size: 30px;
     text-align: center;
 }
-
 #contacttitle {
     font-size: 50px;
 }
+
 /*about page*/
 #abouttitle {
     color: #53B747;
 }
-
 #aboutpage {
     text-align: center;
     font-family: 'Cherry Cream Soda', cursive;
 }
-
 #descwords {
     color: #EE008D;
 }
-
 #desc {
     color: #FFF200;
 }
-
 #biopic {
     border: 2px solid #29ADE4;
     border-radius: 50%;
     height: 250px;
     margin-bottom: 15px;
 }
-
 #aboutpage p {
     max-width: 450px;
 }
+
 /*education page*/
 #edupage {
     color: #53B747;
     font-family: 'Cherry Cream Soda', cursive;
     text-align: right;
 }
+#edupage h3 {
+    font-size: 25px;
+    color: #EE008D;
+}
 
-    #edupage h3 {
-        font-size: 25px;
-        color: #EE008D;
-    }
 /*other stuff page*/
 #dogs, #cat {
     height: 200px;
@@ -238,6 +256,7 @@ th {
     margin-top: 20px;
     border-radius: 50%;
 }
+
 /*Contact page*/
 #github {
     margin-top: 20px;

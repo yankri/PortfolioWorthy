@@ -1,19 +1,21 @@
-﻿body {
+﻿/*STUFFLAYOUT formatting*/
+body {
     font-family: 'Cherry Cream Soda', cursive;
 }
 /*header*/
 #dino {
-    
     margin-top: 5px;
     margin-left: 5px;
     height: 7%;
     width: 7%;
 }
+
 #name {
     color: white;
     font-size: 50px;
 }
-/*stuff I made page*/
+
+/*STUFF I MADE VIEW*/
 #title {
     font-family: 'Cherry Cream Soda', cursive;
     color: #EE008D;
@@ -21,46 +23,52 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
 #intro {
     color: #53B747;
     font-size: 25px;
     text-align: center;
     margin-bottom: 30px;
 }
+
 #ghlink {
     color: #EE008D;
 }
+
 .thumbnail {
     text-align: center;
     height: 475px;
     background-color: #EEF9ED;
 }
+
 .btn {
-    
     background-color: #53B747;
     border: 1px solid #53B747;
 }
+
 .btn:hover {
     background-color: #29ADE4;
     border: 1px solid #29ADE4;
-
 }
+
 a.btn {
     position: absolute;
     bottom: 40px;
     right: 120px;
 }
+
 .projname {
     color: #EE008D;
     font-size: 30px;
     text-align: center;
 }
 
-/*individual project page*/
+/*INDIVIDUAL PROJECT VIEW*/
 .image {
-    height:300px;
-    width:900px;
+    height: 300px;
+    width: 900px;
 }
+
 #projectname {
     margin-top: 0px;
     color: #EE008D;
@@ -82,45 +90,55 @@ ul {
 #description {
     color: #FFF200;
 }
-/*other stuff page*/
+/*OTHER STUFF VIEW*/
+/*business description formatting*/
 #mw {
     margin: auto;
 }
+
 #mwplug {
     color: #53B747;
 }
+
 #mwpic {
     text-align: center;
 }
+
 .linksies, .linksies:hover {
     color: #EE008D;
 }
-#facebook, #insta, #twitter {
+/*social media icons*/
+#facebook, #insta, #twitter, #pinterest {
     height: 72px;
     width: 72px;
 }
+/*horizontal rule formatting*/
 hr {
     margin-top: 50px;
     margin-bottom: 70px;
     border-color: #EE008D;
 }
+/*table images of pets formatting*/
 .img {
     height: 300px;
     width: auto;
     border: 2px solid #29ADE4;
 }
+/*pets table formatting*/
 table {
     text-align: center;
     width: 900px;
-    margin:auto;
+    margin: auto;
 }
 
 .name {
     color: #EE008D;
 }
+
 .breed {
     color: #53B747;
 }
-.likes{
+
+.likes {
     color: #FFF200;
 }
