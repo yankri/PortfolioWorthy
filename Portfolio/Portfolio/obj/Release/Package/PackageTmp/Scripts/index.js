@@ -5,7 +5,9 @@ function hideAll() {
     $('#contactpage').hide();
     $('#skillspage').hide();
     $('#aboutpage').hide();
+    $("#mobiledino").hide();
 };
+
 //these functions control the hide/show of the individual content elements
 $(document).ready(function () {
     $("#skills").click(function (e) {

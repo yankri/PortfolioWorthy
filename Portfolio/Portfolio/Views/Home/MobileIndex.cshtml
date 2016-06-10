@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+<link href='https://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
+<link href="~/Content/homepage.css" rel="stylesheet" type="text/css"/>
+<link href="~/Content/mobilehome.css" rel="stylesheet" type="text/css" />
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="@Url.Action("MobileIndex", "Home")"><img id="brand" src="~/image/fav.png" height="50" width="50" /></a>
+            <h3 id="mobilename">Krista Scholdberg</h3>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                <li><a href="@Url.Action("MadeThese", "Home")">Portfolio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learn More<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li id="about">About</li>
+                        <li id="skills">Skills</li>
+                        <li id="education">Education</li>
+                        <li id="contact">Contact</li>
+                        <li id="otherstuff">Other Stuff</li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-sm-8">
+            <div class="hiddden" id="aboutpage">
+                <h1 id="abouttitle">About me!</h1>
+                <img id="biopic" src="~/image/2016-05-24.jpg" />
+                <p id="descwords">Programmer - Entrepreneur - Artisan</p>
+                <p id="desc">Krista is a budding software developer living on the east side of Cleveland, OH. After spending the last several years home with her children, she is getting back into the workforce.  With a passion for creativity, Krista specializes in designing and building websites using ASP.NET and a variety of front-end technologies. She spends her free time with her two dogs, three cats, two rabbits, and two children and software dev husband.</p>
+            </div>
+
+            <div class="hiddden" id="skillspage">
+                <table id="skillstable">
+                    <tr>
+                        <th id="langtabletitle">Languages</th>
+                        <th id="tooltabletitle" class="tools">Tools</th>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td class="tools">Visual Studio 2015</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript</td>
+                        <td class="tools">GitHub</td>
+                    </tr>
+                    <tr>
+                        <td>JQuery</td>
+                        <td class="tools">Microsoft Azure</td>
+                    </tr>
+                    <tr>
+                        <td>JQueryUI</td>
+                        <td class="tools">Google Drive</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td class="tools">SSMS</td>
+                    </tr>
+                    <tr>
+                        <td>HTML5</td>
+                        <td class="tools">Microsoft Office</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td class="tools"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="hiddden" id="contactpage">
+                <h1 id="contacttitle">Contact me!</h1>
+                <a href="https://github.com/yankri" target="_blank"><img src="~/image/GitHub-Mark-Light-64px.png" id="github" /></a><br />
+                <a href="https://www.linkedin.com/in/yankri" target="_blank"><img src="~/image/Logo-2CRev-66px-TM.png" /></a>
+            </div>
+
+            <div class="hiddden" id="edupage">
+                <h3>We Can Code IT Coding Bootcamp</h3>
+                <h4>Part-time evening cohort</h4>
+                <p class="edudesc">Project-based coding curriculum</p>
+
+                <h3>John Carroll University</h3>
+                <h4>Bachelor of Science in Biology, Class of December 2007</h4>
+                <p class="edudesc">Concentrations in Math and Chemistry.</p>
+            </div>
+        </div>
+    </div>
+    <div id="mobiledino" class="row">
+        <div class="col-md-4 col-sm-4">
+            <img id="mobiledino" class="img-responsive" src="~/image/sassy.png" />
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+<script src="~/Scripts/mobilehome.js" type="text/javascript"></script>

@@ -1,0 +1,16 @@
+﻿body {
+    color: white;
+    font-family: 'Cherry Cream Soda', cursive;
+}
+a.navbar-brand {
+    padding: 0;
+}
+#mobilename {
+    color: white;
+    font-family: 'Cherry Cream Soda', cursive;
+    margin-left: 40px;
+}
+#mobiledino{
+    height: 300px;
+    width: auto;
+}

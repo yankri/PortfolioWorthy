@@ -227,6 +227,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\homepage.css" />
     <Content Include="Content\MadeThese.css" />
+    <Content Include="Content\mobilehome.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -274,6 +275,7 @@
     <Content Include="image\2016-05-31.jpg" />
     <Content Include="image\cat.jpg" />
     <Content Include="image\doggies.jpg" />
+    <Content Include="image\fav.png" />
     <Content Include="image\FB-f-Logo__blue_72.png" />
     <Content Include="image\GitHub-Mark-Light-64px.png" />
     <Content Include="image\Instagram-v051916.png" />
@@ -347,6 +349,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\mobilehome.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
@@ -418,6 +421,7 @@
     <Content Include="slick\fonts\slick.eot" />
     <Content Include="slick\fonts\slick.ttf" />
     <Content Include="slick\fonts\slick.woff" />
+    <Content Include="Views\Home\MobileIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

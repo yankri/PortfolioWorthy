@@ -116,9 +116,7 @@ th {
     padding-left: 15px;
 }
 
-.edudesc {
-    color: #29ADE4;
-}
+
 
 /*glowing letters help let someone know where to click*/
 #stuffImade {
@@ -153,37 +151,37 @@ th {
 
 @-webkit-keyframes glow {
     to {
-        text-shadow: 0 0 8px #EE008D;
+        text-shadow: 0 0 12px #EE008D;
     }
 }
 
 @-webkit-keyframes glow1 {
     to {
-        text-shadow: 0 0 8px #53B747;
+        text-shadow: 0 0 12px #53B747;
     }
 }
 
 @-webkit-keyframes glow2 {
     to {
-        text-shadow: 0 0 8px #29ADE4;
+        text-shadow: 0 0 12px #29ADE4;
     }
 }
 
 @-webkit-keyframes glow3 {
     to {
-        text-shadow: 0 0 8px #FFF200;
+        text-shadow: 0 0 12px #FFF200;
     }
 }
 
 @-webkit-keyframes glow4 {
     to {
-        text-shadow: 0 0 8px #EE008D;
+        text-shadow: 0 0 12px #EE008D;
     }
 }
 
 @-webkit-keyframes glow5 {
     to {
-        text-shadow: 0 0 6px #53B747;
+        text-shadow: 0 0 12px #53B747;
     }
 }
 
@@ -247,6 +245,9 @@ th {
 #edupage h3 {
     font-size: 25px;
     color: #EE008D;
+}
+.edudesc {
+    color: #29ADE4;
 }
 
 /*other stuff page*/

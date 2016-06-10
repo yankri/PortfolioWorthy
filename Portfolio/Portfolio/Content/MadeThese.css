@@ -38,8 +38,9 @@ body {
 
 .thumbnail {
     text-align: center;
-    height: 475px;
+    min-height: 475px;
     background-color: #EEF9ED;
+    position: relative;
 }
 
 .btn {
@@ -52,10 +53,10 @@ body {
     border: 1px solid #29ADE4;
 }
 
-a.btn {
+a.btn.btn {
     position: absolute;
-    bottom: 40px;
-    right: 120px;
+    bottom: 5px;
+    right: 30%;
 }
 
 .projname {
