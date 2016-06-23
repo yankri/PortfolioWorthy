@@ -6,6 +6,12 @@ function hideAll() {
     $('#skillspage').hide();
     $('#aboutpage').hide();
     $("#mobiledino").hide();
+    $("#stuffmenu").hide();
+    $("#aboutmenu").hide();
+    $("#skillsmenu").hide();
+    $("#contactmenu").hide();
+    $("#edumenu").hide();
+    $("#otherstuffmenu").hide();
 };
 
 //these functions control the hide/show of the individual content elements
@@ -89,7 +95,7 @@ $(document).ready(function () {
         });
         $("#stuffmenu").toggle("slide", { direction: "up" }, 400);
     });
-    $("#stuffImade").mouseout(function (e) {
+    $("#stuffImade").mouseleave(function (e) {
         $("#stuffmenu").hide();
     });
 });
@@ -105,7 +111,7 @@ $(document).ready(function () {
         });
         $("#aboutmenu").toggle("slide", { direction: "up" }, 400);
     });
-    $("#about").mouseout(function (e) {
+    $("#about").mouseleave(function (e) {
         $("#aboutmenu").hide();
     });
 });
@@ -121,7 +127,7 @@ $(document).ready(function () {
         });
         $("#skillsmenu").toggle("slide", { direction: "up" }, 400);
     });
-    $("#skills").mouseout(function (e) {
+    $("#skills").mouseleave(function (e) {
         $("#skillsmenu").hide();
     });
 });
@@ -139,7 +145,7 @@ $(document).ready(function () {
         });
         $("#contactmenu").toggle("slide", { direction: "down" }, 400);
     });
-    $("#contact").mouseout(function (e) {
+    $("#contact").mouseleave(function (e) {
         $("#contactmenu").hide();
     });
 });
@@ -156,7 +162,7 @@ $(document).ready(function () {
         });
         $("#otherstuffmenu").toggle("slide", { direction: "down" }, 400);
     });
-    $("#otherstuff").mouseout(function (e) {
+    $("#otherstuff").mouseleave(function (e) {
         $("#otherstuffmenu").hide();
     });
 });
@@ -173,8 +179,9 @@ $(document).ready(function () {
         });
         $("#edumenu").toggle("slide", { direction: "down" }, 400);
     });
-    $("#education").mouseout(function (e) {
+    $("#education").mouseleave(function (e) {
         $("#edumenu").hide();
+        
     });
 });
 
